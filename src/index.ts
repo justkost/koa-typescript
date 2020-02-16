@@ -1,9 +1,10 @@
+import 'module-alias/register'
 import * as Koa from 'koa'
 import * as logger from 'koa-logger'
 import * as json from 'koa-json'
 import * as bodyParser from 'koa-bodyparser'
-import { PORT } from './config'
-import router from './routes'
+import { PORT } from 'src/config'
+import router from 'src/routes'
 
 const app = new Koa()
 
