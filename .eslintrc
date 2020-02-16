@@ -1,0 +1,36 @@
+{
+  "extends": ["standard"],
+  "parser": "@typescript-eslint/parser",
+  "env": {
+    "node": true,
+    "es6": true,
+    "jest": true
+  },
+  "plugins": [
+    "standard",
+    "@typescript-eslint",
+    "jest"
+  ],
+  "rules": {
+    "no-trailing-spaces": "warn",
+    "comma-dangle": ["warn", "always-multiline"],
+    "import/first": "error",
+    "import/newline-after-import": "error",
+    "generator-star-spacing": ["warn", {"before": false, "after": true}],
+    "space-before-function-paren": ["error", {
+      "anonymous": "never",
+      "named": "never",
+      "asyncArrow": "always"
+    }],
+    "no-console": "warn",
+    "no-debugger": "warn",
+    "max-len": "off",
+    "no-mixed-operators": "warn",
+    "jest/no-disabled-tests": "warn",
+    "jest/no-focused-tests": "error",
+    "jest/no-identical-title": "error",
+    "jest/prefer-to-have-length": "warn",
+    "jest/valid-expect": "error",
+    "no-unused-vars": "warn"
+  }
+}
