@@ -1,8 +1,8 @@
 import * as Router from 'koa-router'
-import { main } from 'src/controllers/main'
+import MainController from 'src/controllers/MainController'
 
 const router = new Router()
 
-router.get('/', main)
+router.get('/', MainController.home)
 
 export default router
