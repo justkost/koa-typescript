@@ -8,9 +8,11 @@
 
 ## cli
 
-* `npm run build` - build
-* `npm run start` - development
-* `npm run lint` - linter
+* `npm start` - development
+* `npm run build` - production
+* `npm test`
+* `npm run lint`
+* `npm run lint:fix`
 
 ## import using alias
 
