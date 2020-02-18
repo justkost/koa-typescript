@@ -1,8 +1,9 @@
 # koa-typescript
 
 * koa
-* eslint
 * typescript
+* eslint
+* jest
 * nodemon
 * aliases
 
