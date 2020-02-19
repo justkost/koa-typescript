@@ -5,9 +5,11 @@ import * as json from 'koa-json'
 import * as bodyParser from 'koa-bodyparser'
 import { PORT, NODE_ENV } from 'src/config'
 import router from 'src/routes'
+import errorHandler from 'src/middlewares/errorHandler'
 
 const app = new Koa()
 
+app.use(errorHandler())
 app.use(json())
 app.use(logger())
 app.use(bodyParser())

@@ -10,4 +10,11 @@ describe('api', () => {
       .expect('Content-Type', 'application/json; charset=utf-8')
       .expect(200)
   })
+
+  it('<404> Not Found', async () => {
+    await request
+      .get('/qwerty')
+      .expect('Content-Type', 'application/json; charset=utf-8')
+      .expect(404)
+  })
 })
